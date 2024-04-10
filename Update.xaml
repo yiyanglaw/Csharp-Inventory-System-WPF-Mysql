@@ -1,0 +1,83 @@
+﻿<Window x:Class="WpfApp1.Update"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Update Inventory Info" Height="600" Width="800"
+        WindowState="Maximized">
+    <Grid>
+        <Image Source="C:\Users\Law Yi Yang\Downloads\WpfApp1\WpfApp1\Resources\update.jpg" Stretch="Fill"/>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="170,-70,0,0">
+            <TextBlock Text="Update Inventory Info" Foreground="White" FontSize="24" FontWeight="Bold" Margin="0,0,0,20" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Enter RobotID:" Grid.Row="0" Foreground="White" Margin="0,0,10,0"/>
+                <TextBox Grid.Column="1" Grid.Row="0" x:Name="RobotIDTextBox" Width="200" FontSize="14" TextWrapping="Wrap" />
+
+                <TextBlock Text="Enter Model:" Grid.Row="1" Foreground="White" Margin="0,5,10,0"/>
+                <TextBox Grid.Column="1" Grid.Row="1" x:Name="ModelTextBox" Width="200" FontSize="14" TextWrapping="Wrap" />
+
+                <TextBlock Text="Enter Serial Number:" Grid.Row="2" Foreground="White" Margin="0,5,10,0"/>
+                <TextBox Grid.Column="1" Grid.Row="2" x:Name="SerialNumberTextBox" Width="200" FontSize="14" TextWrapping="Wrap" />
+
+                <TextBlock Text="Enter Manufacturer:" Grid.Row="3" Foreground="White" Margin="0,5,10,0"/>
+                <TextBox Grid.Column="1" Grid.Row="3" x:Name="ManufacturerTextBox" Width="200" FontSize="14" TextWrapping="Wrap" />
+
+                <TextBlock Text="Enter Type:" Grid.Row="4" Foreground="White" Margin="0,5,10,0"/>
+                <TextBox Grid.Column="1" Grid.Row="4" x:Name="TypeTextBox" Width="200" FontSize="14" TextWrapping="Wrap" />
+
+                <TextBlock Text="Enter Payload Capacity:" Grid.Row="5" Foreground="White" Margin="0,5,10,0"/>
+                <TextBox Grid.Column="1" Grid.Row="5" x:Name="PayloadCapacityTextBox" Width="200" FontSize="14" TextWrapping="Wrap" />
+
+                <TextBlock Text="Enter Reach:" Grid.Row="6" Foreground="White" Margin="0,5,10,0"/>
+                <TextBox Grid.Column="1" Grid.Row="6" x:Name="ReachTextBox" Width="200" FontSize="14" TextWrapping="Wrap" />
+
+                <TextBlock Text="Enter DOF:" Grid.Row="7" Foreground="White" Margin="0,5,10,0"/>
+                <TextBox Grid.Column="1" Grid.Row="7" x:Name="DOFTextBox" Width="200" FontSize="14" TextWrapping="Wrap" />
+
+                <TextBlock Text="Enter Sensors:" Grid.Row="8" Foreground="White" Margin="0,5,10,0"/>
+                <TextBox Grid.Column="1" Grid.Row="8" x:Name="SensorsTextBox" Width="200" FontSize="14" TextWrapping="Wrap" />
+
+                <TextBlock Text="Enter Battery Type:" Grid.Row="9" Foreground="White" Margin="0,5,10,0"/>
+                <TextBox Grid.Column="1" Grid.Row="9" x:Name="BatteryTypeTextBox" Width="200" FontSize="14" TextWrapping="Wrap" />
+
+                <TextBlock Text="Enter Battery Capacity:" Grid.Row="10" Foreground="White" Margin="0,5,10,0"/>
+                <TextBox Grid.Column="1" Grid.Row="10" x:Name="BatteryCapacityTextBox" Width="200" FontSize="14" TextWrapping="Wrap" />
+
+                <TextBlock Text="Enter Current Location:" Grid.Row="11" Foreground="White" Margin="0,5,10,0"/>
+                <TextBox Grid.Column="1" Grid.Row="11" x:Name="CurrentLocationTextBox" Width="200" FontSize="14" TextWrapping="Wrap" />
+
+                <TextBlock Text="Enter Status:" Grid.Row="12" Foreground="White" Margin="0,5,10,0"/>
+                <TextBox Grid.Column="1" Grid.Row="12" x:Name="StatusTextBox" Width="200" FontSize="14" TextWrapping="Wrap" />
+
+                <TextBlock Text="Enter Last Maintenance Date:" Grid.Row="13" Foreground="White" Margin="0,5,10,0"/>
+                <TextBox Grid.Column="1" Grid.Row="13" x:Name="LastMaintenanceDateTextBox" Width="200" FontSize="14" TextWrapping="Wrap" />
+
+                <TextBlock Text="Enter Next Maintenance Due:" Grid.Row="14" Foreground="White" Margin="0,5,10,0"/>
+                <TextBox Grid.Column="1" Grid.Row="14" x:Name="NextMaintenanceDueTextBox" Width="200" FontSize="14" TextWrapping="Wrap" />
+            </Grid>
+
+            <Button x:Name="UpdateButton" Content="Update" Background="#00000000" BorderBrush="White" Foreground="White" FontSize="18" Padding="10" Margin="0,10" Click="UpdateButton_Click" />
+            <Button x:Name="BackButton" Content="Back" FontSize="18" Padding="10" Background="#00000000" BorderBrush="White" Foreground="White" Margin="0,3" Click="BackButton_Click" />
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp1.Display"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Display Inventory Info" Height="600" Width="800"
+        WindowState="Maximized">
+    <Grid>
+        <Image Source="C:\Users\Law Yi Yang\Downloads\WpfApp1\WpfApp1\Resources\display.jpg" Stretch="UniformToFill"/>
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,73,0,0">
+            <TextBlock Text="            Display Inventory Info" FontSize="36" FontWeight="Bold" Foreground="White"  Margin="0,0,0,20"/>
+            <DataGrid x:Name="InventoryDataGrid" Height="200" Width="600" AutoGenerateColumns="True" IsReadOnly="True"/>
+            <Button Content="Export to Excel" FontSize="16" Background="#00000000" FontWeight="Bold"  BorderBrush="White" Foreground="White" Padding="10" Margin="0,10,0,0" Click="ExportToExcelButton_Click"/>
+            <Button Content="Back" FontSize="16" Padding="10" Background="#00000000" FontWeight="Bold" BorderBrush="White" Foreground="White" Margin="0,10,0,0" Click="BackButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

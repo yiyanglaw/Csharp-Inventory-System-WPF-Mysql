@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApp1.DashboardWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Inventory Management System" Height="600" Width="800"
+        WindowState="Maximized">
+    <Grid>
+        <Image Source="C:\Users\Law Yi Yang\Downloads\WpfApp1\WpfApp1\Resources\background88.jpg" Stretch="Fill"/>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Inventory Management System" FontSize="34" FontWeight="Bold" Foreground="White" Margin="0,0,0,20"/>
+            <Button Content="Add Inventory Info" FontSize="24" Padding="10" Margin="0,5" Background="#00000000" BorderBrush="White" Foreground="White" Click="AddButton_Click"/>
+            <Button Content="Search Inventory Info" FontSize="24" Padding="10" Margin="0,5" Background="#00000000" BorderBrush="White" Foreground="White" Click="SearchButton_Click"/>
+            <Button Content="Display Inventory Info" FontSize="24" Padding="10" Margin="0,5" Background="#00000000" BorderBrush="White" Foreground="White" Click="DisplayButton_Click"/>
+            <Button Content="Update Inventory Info" FontSize="24" Padding="10" Margin="0,5" Background="#00000000" BorderBrush="White" Foreground="White" Click="UpdateButton_Click"/>
+            <Button Content="Delete Inventory Info" FontSize="24" Padding="10" Margin="0,5" Background="#00000000" BorderBrush="White" Foreground="White" Click="DeleteButton_Click"/>
+            <Button Content="Exit" FontSize="24" FontWeight="Bold" Padding="10" Margin="0,5" Background="#00000000" BorderBrush="White" Foreground="White" Click="ExitButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
